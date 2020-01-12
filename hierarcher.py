@@ -8,11 +8,6 @@ import yaml
 
 from validations import validate_args
 
-# @TODO add coverage/build into travis CI
-# @TODO write README
-# @TODO add more tests
-# @TODO handle keyErrors?
-
 
 def setup():
     locale.setlocale(locale.LC_ALL, "en_US")
