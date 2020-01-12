@@ -10,7 +10,7 @@ from validations import validate_args
 
 
 def setup():
-    locale.setlocale(locale.LC_ALL, "en_US")
+    locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
 
 
 def get_args():

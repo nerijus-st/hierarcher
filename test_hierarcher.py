@@ -10,7 +10,7 @@ from validations import ALLOWED_FILE_EXTENSIONS
 
 class TestHierarcher(unittest.TestCase):
     def setUp(self) -> None:
-        locale.setlocale(locale.LC_ALL, "en_US")
+        locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
         self.args = {}
         self.captured_output = io.StringIO()
 

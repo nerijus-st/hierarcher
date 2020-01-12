@@ -3,13 +3,6 @@ language: python
 python:
     - "3.8"
 
-before_script:
-    - export LANGUAGE=en_US.UTF-8
-    - export LANG=en_US.UTF-8
-    - export LC_ALL=en_US.UTF-8
-    - sudo locale-gen en_US.UTF-8
-    - sudo dpkg-reconfigure locales
-
 install:
     - pip install -r requirements.txt
     - pip install coverage
