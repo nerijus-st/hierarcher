@@ -10,7 +10,7 @@ git clone https://github.com/nerijus-st/hierarcher.git
 cd hierarcher
 python3 -m venv venv
 . venv/bin/activate
-python3 -m pip install requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ## Usage
