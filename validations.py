@@ -4,14 +4,14 @@ import json
 ALLOWED_FILE_EXTENSIONS = (".yaml", ".json")
 
 
-def validate_file_argument(value):
+def validate_file_argument(value: str):
     if not value.lower().endswith(ALLOWED_FILE_EXTENSIONS):
         raise argparse.ArgumentTypeError(
             "Only {} file extensions are allowed.".format(ALLOWED_FILE_EXTENSIONS)
         )
 
 
-def validate_text_argument(value):
+def validate_text_argument(value: str):
     try:
         json.loads(value)
     except json.JSONDecodeError:
@@ -20,7 +20,7 @@ def validate_text_argument(value):
         )
 
 
-def validate_args(args):
+def validate_args(args: dict):
     if not any(args.values()) or all(args.values()):
         raise ValueError(
             "Either file path or direct text must be provided as argument, but not both."

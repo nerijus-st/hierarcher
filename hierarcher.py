@@ -8,7 +8,6 @@ import yaml
 
 from validations import validate_args
 
-# @TODO add type hints
 # @TODO add coverage/build into travis CI
 # @TODO write README
 # @TODO add more tests
@@ -31,7 +30,7 @@ def get_args():
     return args
 
 
-def get_total_salary(data):
+def get_total_salary(data: dict) -> float:
     total_salary = data["employer"]["salary"]
 
     for emp in data["employer"]["reports"]:
@@ -40,7 +39,7 @@ def get_total_salary(data):
     return total_salary
 
 
-def print_employers(data, indent=0):
+def print_employers(data: dict, indent: int = 0):
     output = data["employer"]["name"]
     if indent > 0:
         output = " " * indent + output
@@ -56,12 +55,12 @@ def print_employers(data, indent=0):
             print_employers(emp, indent)
 
 
-def print_total_salary(data):
+def print_total_salary(data: dict):
     salary = get_total_salary(data)
     print("Total salary: {}".format(locale.currency(salary, grouping=True)))
 
 
-def print_hierarchy_from_file(file_path):
+def print_hierarchy_from_file(file_path: str):
     with open(file_path, "r") as f:
         if "yaml" in file_path:
             data = yaml.safe_load(f)
@@ -71,12 +70,12 @@ def print_hierarchy_from_file(file_path):
         print_hierarchy(data)
 
 
-def print_hierarchy(data):
+def print_hierarchy(data: dict):
     print_employers(data)
     print_total_salary(data)
 
 
-def main(args):
+def main(args: dict):
     validate_args(args)
 
     if args["input_file"] is not None:
