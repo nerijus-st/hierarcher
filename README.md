@@ -1,4 +1,5 @@
 # Hierarcher
+[![Build Status](https://travis-ci.org/nerijus-st/hierarcher.svg?branch=master)](https://travis-ci.org/nerijus-st/hierarcher)
 
 Hierarcher is a simple CLI application written in Python. It reads input from stdin or json/yaml file and prints company hierarchy tree with total salary. See examples in usage for more details.
 
