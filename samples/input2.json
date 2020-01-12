@@ -1,0 +1,83 @@
+{
+	"employer": {
+		"name": "Jeff",
+		"salary": 100000,
+		"reports": [{
+				"employer": {
+					"name": "Dave",
+					"salary": 85000,
+					"reports": [{
+						"employer": {
+							"name": "Zachary",
+							"salary": 60000,
+							"reports": []
+						}
+					}, {
+						"employer": {
+							"name": "Andy",
+							"salary": 65000,
+							"reports": []
+						}
+					}, {
+						"employer": {
+							"name": "Json",
+							"salary": 60000,
+							"reports": []
+						}
+					}, {
+						"employer": {
+							"name": "Aaron",
+							"salary": 56000,
+							"reports": []
+						}
+					}, {
+						"employer": {
+							"name": "Suzanne",
+							"salary": 61000,
+							"reports": [{
+								"employer": {
+									"name": "Tim",
+									"salary": 25000,
+									"reports": [{
+										"employer": {
+											"name": "McDonald",
+											"salary": 40000,
+											"reports": [{
+													"employer": {
+														"name": "Afernee",
+														"salary": 10000,
+														"reports": []
+													}
+												},
+												{
+													"employer": {
+														"name": "Sarah",
+														"salary": 20000,
+														"reports": [{
+															"employer": {
+																"name": "Gabriel",
+																"salary": 5000,
+																"reports": []
+															}
+														}]
+													}
+												}
+											]
+										}
+									}]
+								}
+							}]
+						}
+					}]
+				}
+			},
+			{
+				"employer": {
+					"name": "Cory",
+					"salary": 65000,
+					"reports": []
+				}
+			}
+		]
+	}
+}

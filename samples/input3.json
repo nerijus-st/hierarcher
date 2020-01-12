@@ -1,0 +1,33 @@
+{
+	"employer": {
+		"name": "Jeff",
+		"salary": 100000,
+		"reports": [{
+				"employer": {
+					"name": "Dave",
+					"salary": 85000,
+					"reports": [{
+						"employer": {
+							"name": "Zach",
+							"salary": 65000,
+							"reports": []
+						}
+					}, {
+						"employer": {
+							"name": "Anna",
+							"salary": 70000,
+							"reports": []
+						}
+					}]
+				}
+			},
+			{
+				"employer": {
+					"name": "Cory",
+					"salary": 65000,
+					"reports": []
+				}
+			}
+		]
+	}
+}

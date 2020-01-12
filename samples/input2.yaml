@@ -1,0 +1,13 @@
+---
+employer:
+  name: Jeff
+  salary: 10
+  reports:
+  - employer:
+      name: Dave
+      salary: 2
+      reports: []
+  - employer:
+      name: Cory
+      salary: 3
+      reports: []

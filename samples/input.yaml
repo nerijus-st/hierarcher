@@ -1,0 +1,33 @@
+---
+employer:
+  name: Jeff
+  salary: 100000
+  reports:
+  - employer:
+      name: Dave
+      salary: 85000
+      reports:
+      - employer:
+          name: Andy
+          salary: 65000
+          reports: []
+      - employer:
+          name: Dan
+          salary: 60000
+          reports: []
+      - employer:
+          name: Json
+          salary: 60000
+          reports: []
+      - employer:
+          name: Rick
+          salary: 56000
+          reports: []
+      - employer:
+          name: Suzanne
+          salary: 61000
+          reports: []
+  - employer:
+      name: Cory
+      salary: 65000
+      reports: []
